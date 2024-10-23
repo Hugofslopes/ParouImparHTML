@@ -1,0 +1,242 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #fedf95;
+}
+
+.game-container {
+    max-width: 1400px;
+    margin: 40px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-image: url('ParOuImpar.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.player-selection {
+    margin-bottom: 20px;
+}
+
+.game-board {
+    margin-bottom: 20px;
+}
+
+.scoreboard {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fedf95;
+    color: #000000;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #d5c492;
+}
+
+.play-button, .reset-button {
+    font-size: 18px;
+}
+
+.play-button:hover {
+    background-color: #3e8e41;
+}
+
+.reset-button {
+    background-color: #e74c3c; /* Vermelho */
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.reset-button:hover {
+    background-color: #c0392b;
+}
+
+.choice-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.choice {
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+    background-color: transparent;
+}
+
+.even-button {
+    background-color: #ae0898;
+    color: #000000;
+}
+
+.odd-button {
+    background-color: #ff69b4;
+    color: #000000;
+}
+
+.pressed {
+    background-color: #ccc; 
+    color: #666;
+    transform: translateY(2px); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+}
+
+.even-button:hover {
+    background-color: #4e96a4;
+}
+
+.odd-button:hover {
+    background-color: #ebc7d9;
+}
+
+.result-container {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+#player1-choice-result {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#game-result {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fedf95;
+    margin-bottom: 20px;
+}
+
+.even-image {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+}
+
+.odd-image {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content img {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+.player-selection {
+    display: flex;
+    align-items: center;
+}
+
+.player-selection img {
+    margin-left: 10px;
+}
+
+
+#player1-image, #player2-image {
+    width: 50px; /* ajuste o tamanho de acordo com sua necessidade */
+    height: 50px; /* ajuste o tamanho de acordo com sua necessidade */
+    border-radius: 50%; /* faz com que a imagem seja exibida em um círculo */
+}
+
+#player1-score, #player2-score {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+
+@media (max-width: 1200px) {
+    .game-container {
+        max-width: 1000px;
+    }
+    .choice-container {
+        width: 60%;
+    }
+    .choice {
+        width: 30%;
+    }
+}
+
+@media (max-width: 900px) {
+.game-container {
+    max-width: 800px;
+}
+.choice-container {
+    width: 70%;
+}
+.choice {
+    width: 35%;
+}
+}
+
+@media (max-width: 600px) {
+.game-container {
+    max-width: 600px;
+}
+.choice-container {
+    width: 80%;
+}
+.choice {
+    width: 40%;
+}
+}
+
+@media (max-width: 400px) {
+.game-container {
+    max-width: 400px;
+}
+.choice-container {
+    width: 90%;
+}
+.choice {
+    width: 45%;
+}
+}
